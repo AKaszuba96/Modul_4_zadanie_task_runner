@@ -70,3 +70,57 @@ max-width: 1140px;
         }   
     }
 }
+
+/* Header - splash */
+
+.splash {
+    background: $color-two;
+    /*background-image: url("images/header-photo.jpeg");*/
+    color: $color-one;
+    min-height: 500px;
+    display: flex;
+    text-align: center;
+
+
+    .splash-inner {
+        margin: auto; /* tyle wystarczy gdy masz ustawionego flexa w rodzicu */
+        max-width: 70%;
+    
+        .page-title {
+            margin: 0;
+            font-size: 40px;
+            font-weight: 100;
+            line-height: 1.2;
+            font-style: italic;
+            text-transform: capitalize;
+        }
+
+        .page-subtitle {
+            margin: 10px 0;
+            font-weight: 300;
+            font-size: 72px;
+            font-family: $font-header;
+            text-transform: uppercase;
+        }
+
+        .btn {
+            display: inline-block;
+            min-width: 220px;
+            margin: 24px auto 0 auto;
+            padding: 16px;
+            border-radius: 5px;
+            font-family: $font-text;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            border-width: 2px;
+            border-style: solid;
+            background: $color-main;
+            color: $color-one;
+            border-color: $color-main;
+        }
+    }
+}

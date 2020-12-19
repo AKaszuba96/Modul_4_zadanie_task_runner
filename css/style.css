@@ -62,4 +62,58 @@ body {
 .navigation ul li:first-child a:hover {
   color: #fff;
 }
+
+/* Header - splash */
+.splash {
+  background: #2c3e50;
+  /*background-image: url("images/header-photo.jpeg");*/
+  color: #fff;
+  min-height: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.splash .splash-inner {
+  margin: auto;
+  /* tyle wystarczy gdy masz ustawionego flexa w rodzicu */
+  max-width: 70%;
+}
+
+.splash .splash-inner .page-title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 1.2;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.splash .splash-inner .page-subtitle {
+  margin: 10px 0;
+  font-weight: 300;
+  font-size: 72px;
+  font-family: "Balsamiq Sans", cursive;
+  text-transform: uppercase;
+}
+
+.splash .splash-inner .btn {
+  display: inline-block;
+  min-width: 220px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Baloo 2", cursive;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background: #f1c40f;
+  color: #fff;
+  border-color: #f1c40f;
+}
 /*# sourceMappingURL=style.css.map */
