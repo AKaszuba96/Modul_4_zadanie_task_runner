@@ -3,6 +3,7 @@
 $color-main: #f1c40f;
 $color-one: #fff; /* bialy */
 $color-two: #2c3e50; /* granatowy */
+$color-three: #7f8c8d; /* szary */
 
 $font-header: 'Balsamiq Sans', cursive;
 $font-text: 'Baloo 2', cursive;
@@ -19,7 +20,7 @@ margin: 0;
 font-size: 16px;
 line-height: 1.7; /* interlinia */
 font-family: $font-text;
-color: $color-two;
+color: $color-three;
 }
 
 .container {
@@ -27,6 +28,37 @@ margin: 0 auto;
 padding: 0 20px;
 max-width: 1140px;
 }
+
+section {
+    padding: 96px 0;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 40px;
+    font-family: $font-header;
+    text-transform: uppercase;
+    color: $color-two;
+    text-align: center;
+}
+
+.section-subtitle {
+    margin: 0 0 72px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: $color-three;
+    font-style: italic;
+    text-align: center;
+}
+
+/*i {
+    
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}*/
+
 
 /* Navigation */
 
@@ -123,4 +155,36 @@ max-width: 1140px;
             border-color: $color-main;
         }
     }
+}
+
+/* Services */
+
+.services {
+    text-align: center;
+
+    i {
+        color: $color-main;
+        font-size: 38px;
+        background: $color-one;
+        border-style: solid;
+        border-color: $color-main;
+        width: 72px;
+        height: 72px;
+        line-height: 65px;
+        border-radius: 50%; /* zaokraglanie brzegow */
+    }
+
+    h4 {
+        color: $color-two;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 2px;
+        margin-top: 15px;
+    }
+
+    p {
+        margin-block-start: 2px;
+        margin-block-end: 2px;
+    }
+
 }
