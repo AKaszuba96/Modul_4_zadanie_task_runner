@@ -6,3 +6,67 @@ $color-two: #2c3e50; /* granatowy */
 
 $font-header: 'Balsamiq Sans', cursive;
 $font-text: 'Baloo 2', cursive;
+$font-logo: 'Lobster', cursive;
+
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body  {
+margin: 0;
+font-size: 16px;
+line-height: 1.7; /* interlinia */
+font-family: $font-text;
+color: $color-two;
+}
+
+.container {
+margin: 0 auto;
+padding: 0 20px;
+max-width: 1140px;
+}
+
+/* Navigation */
+
+.navigation {
+    background: $color-two;
+    padding: 12px 0;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin-right: 36px;
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: $color-one;
+                
+                &:hover {
+                    color: $color-main;
+                }
+            }
+
+            &:first-child {
+                margin-right: 500px;
+                font-family: $font-logo;
+                font-size: 30px;
+                font-style: italic;
+
+                a {
+                    color: $color-main;
+
+                    &:hover {
+                        color:$color-one;
+                    }
+                }
+            }
+        }   
+    }
+}
