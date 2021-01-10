@@ -59,64 +59,63 @@ section {
     }
 }*/
 
-
-/* Navigation */
-
-.navigation {
-    background: $color-two;
-    padding: 12px 0;
-
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-
-        li {
-            display: inline-block;
-            margin-right: 36px;
-            position: relative;
-
-            a {
-                text-decoration: none;
-                color: $color-one;
-                
-                &:hover {
-                    color: $color-main;
-                }
-            }
-
-            &:first-child {
-                margin-right: 500px;
-                font-family: $font-logo;
-                font-size: 30px;
-                font-style: italic;
-
-                a {
-                    color: $color-main;
-
-                    &:hover {
-                        color:$color-one;
-                    }
-                }
-            }
-        }   
-    }
-}
-
-/* Header - splash */
+/* Header - splash  */
 
 .splash {
-    background: $color-two;
-    /*background-image: url("images/header-photo.jpeg");*/
+    background-image: url("images/header_photo.jpeg");
+    background-color: $color-two; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     color: $color-one;
     min-height: 500px;
     display: flex;
     text-align: center;
 
+    .navigation {
+        padding: 12px 0;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin-right: 36px;
+                position: relative;
+
+                a {
+                    text-decoration: none;
+                    color: $color-one;
+                    
+                    &:hover {
+                        color: $color-main;
+                    }
+                }
+
+                &:first-child {
+                    margin-right: 500px;
+                    font-family: $font-logo;
+                    font-size: 30px;
+                    font-style: italic;
+
+                    a {
+                        color: $color-main;
+
+                        &:hover {
+                            color:$color-one;
+                        }
+                    }
+                }
+            }   
+        }
+    }
 
     .splash-inner {
+        padding: 136px 0;
         margin: auto; /* tyle wystarczy gdy masz ustawionego flexa w rodzicu */
-        max-width: 70%;
+        max-width: 80%;
     
         .page-title {
             margin: 0;
