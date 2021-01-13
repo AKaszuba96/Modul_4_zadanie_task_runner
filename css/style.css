@@ -15,19 +15,23 @@ body {
   /* interlinia */
   font-family: "Baloo 2", cursive;
   color: #7f8c8d;
+  /* Header - splash  */
+  /* Services */
+  /* Portfolio */
+  /* Footer */
 }
 
-.container {
+body .container {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1140px;
 }
 
-section {
+body section {
   padding: 96px 0;
 }
 
-.section-title {
+body .section-title {
   margin: 0;
   font-size: 40px;
   font-family: "Balsamiq Sans", cursive;
@@ -36,7 +40,7 @@ section {
   text-align: center;
 }
 
-.section-subtitle {
+body .section-subtitle {
   margin: 0 0 72px 0;
   font-size: 18px;
   font-weight: 300;
@@ -45,14 +49,14 @@ section {
   text-align: center;
 }
 
-p {
+body p {
   -webkit-margin-before: 2px;
           margin-block-start: 2px;
   -webkit-margin-after: 2px;
           margin-block-end: 2px;
 }
 
-h4 {
+body h4 {
   color: #2c3e50;
   font-weight: bold;
   font-size: 20px;
@@ -60,11 +64,8 @@ h4 {
   margin-top: 2px;
 }
 
-/* Header - splash  */
-.splash {
-  /*background-image: url("images/header-photo.jpeg");*/
-  background-image: url(https://images.pexels.com/photos/356043/pexels-photo-356043.jpeg?cs=srgb&dl=pexels-pixabay-356043.jpg&fm=jpg);
-  /*background-color: $color-two; /* Used if the image is unavailable */
+body .splash {
+  background-image: url("../images/header-photo.jpeg");
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
@@ -73,59 +74,57 @@ h4 {
   /* Resize the background image to cover the entire container */
   color: #fff;
   min-height: 500px;
-  display: -ms-flexbox;
-  display: flex;
   text-align: center;
 }
 
-.splash .navigation {
+body .splash .navigation {
   padding: 12px 0;
 }
 
-.splash .navigation ul {
+body .splash .navigation ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.splash .navigation ul li {
+body .splash .navigation ul li {
   display: inline-block;
   margin-right: 36px;
   position: relative;
 }
 
-.splash .navigation ul li a {
+body .splash .navigation ul li a {
   text-decoration: none;
   color: #fff;
 }
 
-.splash .navigation ul li a:hover {
+body .splash .navigation ul li a:hover {
   color: #f1c40f;
 }
 
-.splash .navigation ul li:first-child {
+body .splash .navigation ul li:first-child {
   margin-right: 500px;
   font-family: "Lobster", cursive;
   font-size: 30px;
   font-style: italic;
 }
 
-.splash .navigation ul li:first-child a {
+body .splash .navigation ul li:first-child a {
   color: #f1c40f;
 }
 
-.splash .navigation ul li:first-child a:hover {
+body .splash .navigation ul li:first-child a:hover {
   color: #fff;
 }
 
-.splash .splash-inner {
+body .splash .splash-inner {
   padding: 136px 0;
   margin: auto;
   /* tyle wystarczy gdy masz ustawionego flexa w rodzicu */
   max-width: 80%;
 }
 
-.splash .splash-inner .page-title {
+body .splash .splash-inner .page-title {
   margin: 0;
   font-size: 40px;
   font-weight: 100;
@@ -134,7 +133,7 @@ h4 {
   text-transform: capitalize;
 }
 
-.splash .splash-inner .page-subtitle {
+body .splash .splash-inner .page-subtitle {
   margin: 10px 0;
   font-weight: 300;
   font-size: 72px;
@@ -142,7 +141,7 @@ h4 {
   text-transform: uppercase;
 }
 
-.splash .splash-inner .btn {
+body .splash .splash-inner .btn {
   display: inline-block;
   min-width: 220px;
   margin: 24px auto 0 auto;
@@ -162,14 +161,13 @@ h4 {
   border-color: #f1c40f;
 }
 
-/* Services */
-.services {
+body .services {
   text-align: center;
   display: -ms-flexbox;
   display: flex;
 }
 
-.services i {
+body .services i {
   color: #f1c40f;
   font-size: 38px;
   background: #fff;
@@ -182,74 +180,69 @@ h4 {
   /* zaokraglanie brzegow */
 }
 
-.services h4 {
+body .services h4 {
   margin-top: 15px;
 }
 
-/* Portfolio */
-.portfolio {
+body .portfolio {
   background: #e8eeee;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
-  /*flex-wrap: wrap;*/
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  width: 100%;
-  /*.portfolio-box {
-        background: $color-one;
-        position: relative;
-        width: 342px;
-        min-height: 342px;*/
-  /*}*/
+  position: relative;
 }
 
-.portfolio .portfolio-image {
+body .portfolio .portfolio-box {
+  background: #fff;
+  position: absolute;
+  margin: 0 auto;
+  width: 342px;
+  min-height: 342px;
+  margin-bottom: 60px;
+}
+
+body .portfolio .portfolio-box .portfolio-image {
   width: 342px;
   height: 342px;
 }
 
-.portfolio .portfolio-image img {
+body .portfolio .portfolio-box .portfolio-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.portfolio .portfolio-text {
-  background: #fff;
+body .portfolio .portfolio-box .portfolio-text {
   padding: 20px 0;
   margin-top: 0;
-  margin-bottom: 60px;
-  width: 342px;
 }
 
-.portfolio .portfolio-text p {
+body .portfolio .portfolio-box .portfolio-text p {
   font-style: italic;
 }
 
-/* Footer */
-.page-footer {
+body .page-footer {
   background: #fff;
   padding: 28px 0;
   text-align: center;
 }
 
-.page-footer ul {
+body .page-footer ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
   /* wyzerowanie punktorow; moga byc inne: disc (kropki), circle, square, decimal(numeracja) */
 }
 
-.page-footer ul li {
+body .page-footer ul li {
   display: inline-block;
   margin-right: 10px;
   position: relative;
   font-size: 0;
 }
 
-.page-footer ul li i {
+body .page-footer ul li i {
   color: #f1c40f;
   font-size: 35px;
   background: #2c3e50;
@@ -261,14 +254,13 @@ h4 {
   /* zaokraglanie brzegow */
 }
 
-.page-footer ul li i:hover {
+body .page-footer ul li i:hover {
   transform: scale(1.2);
 }
 
-.page-footer ul .first {
+body .page-footer ul .first {
   color: #7f8c8d;
   font-size: 16px;
-  margin-left: -380px;
-  margin-right: 150px;
+  margin-left: -350px;
 }
 /*# sourceMappingURL=style.css.map */
