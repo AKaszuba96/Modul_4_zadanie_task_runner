@@ -197,7 +197,6 @@ h4 {
 
 .portfolio {
     background: $color-four;
-    position: absolute;
     text-align: center;
     display: flex;
     /*flex-wrap: wrap;*/
@@ -234,12 +233,46 @@ h4 {
             }
         }
     /*}*/
+}
 
-    
-    
-    
-    
+/* Footer */
 
-    
+.page-footer {
+    background: $color-one;
+    padding: 28px 0;
+    text-align: center;
 
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none; /* wyzerowanie punktorow; moga byc inne: disc (kropki), circle, square, decimal(numeracja) */
+    
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            font-size: 0;
+
+            i {
+                color: $color-main;
+                font-size: 35px;
+                background: $color-two;
+                width: 60px;
+                height: 60px;
+                line-height: 60px; /* taka sama jak height aby wycentrowac ikone w pionie */
+                border-radius: 50%; /* zaokraglanie brzegow */
+        
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .first {
+            color: $color-three;
+            font-size: 16px;
+            margin-left: -380px;
+            margin-right: 150px;
+            }
+    }
 }

@@ -196,7 +196,6 @@ h4 {
 /* Portfolio */
 .portfolio {
   background: #e8eeee;
-  position: absolute;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
@@ -234,5 +233,49 @@ h4 {
 
 .portfolio .portfolio-text p {
   font-style: italic;
+}
+
+/* Footer */
+.page-footer {
+  background: #fff;
+  padding: 28px 0;
+  text-align: center;
+}
+
+.page-footer ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  /* wyzerowanie punktorow; moga byc inne: disc (kropki), circle, square, decimal(numeracja) */
+}
+
+.page-footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  font-size: 0;
+}
+
+.page-footer ul li i {
+  color: #f1c40f;
+  font-size: 35px;
+  background: #2c3e50;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  /* taka sama jak height aby wycentrowac ikone w pionie */
+  border-radius: 50%;
+  /* zaokraglanie brzegow */
+}
+
+.page-footer ul li i:hover {
+  transform: scale(1.2);
+}
+
+.page-footer ul .first {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-left: -380px;
+  margin-right: 150px;
 }
 /*# sourceMappingURL=style.css.map */
