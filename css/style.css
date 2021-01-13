@@ -60,18 +60,11 @@ h4 {
   margin-top: 2px;
 }
 
-/*i {
-    
-
-    &:hover {
-        transform: scale(1.2);
-    }
-}*/
 /* Header - splash  */
 .splash {
-  background-image: url("images/header_photo.jpeg");
-  background-color: #2c3e50;
-  /* Used if the image is unavailable */
+  /*background-image: url("images/header-photo.jpeg");*/
+  background-image: url(https://images.pexels.com/photos/356043/pexels-photo-356043.jpeg?cs=srgb&dl=pexels-pixabay-356043.jpg&fm=jpg);
+  /*background-color: $color-two; /* Used if the image is unavailable */
   background-position: center;
   /* Center the image */
   background-repeat: no-repeat;
