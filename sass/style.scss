@@ -22,249 +22,244 @@ font-size: 16px;
 line-height: 1.7; /* interlinia */
 font-family: $font-text;
 color: $color-three;
-}
 
-.container {
-margin: 0 auto;
-padding: 0 20px;
-max-width: 1140px;
-}
 
-section {
-    padding: 96px 0;
-}
+    .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1140px;
+    }
 
-.section-title {
-    margin: 0;
-    font-size: 40px;
-    font-family: $font-header;
-    text-transform: uppercase;
-    color: $color-two;
-    text-align: center;
-}
+    section {
+        padding: 96px 0;
+    }
 
-.section-subtitle {
-    margin: 0 0 72px 0;
-    font-size: 18px;
-    font-weight: 300;
-    color: $color-three;
-    font-style: italic;
-    text-align: center;
-}
+    .section-title {
+        margin: 0;
+        font-size: 40px;
+        font-family: $font-header;
+        text-transform: uppercase;
+        color: $color-two;
+        text-align: center;
+    }
 
-p {
-    margin-block-start: 2px;
-    margin-block-end: 2px;
-}
+    .section-subtitle {
+        margin: 0 0 72px 0;
+        font-size: 18px;
+        font-weight: 300;
+        color: $color-three;
+        font-style: italic;
+        text-align: center;
+    }
 
-h4 {
-    color: $color-two;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 2px;
-    margin-top: 2px;
-}
+    p {
+        margin-block-start: 2px;
+        margin-block-end: 2px;
+    }
 
-/* Header - splash  */
+    h4 {
+        color: $color-two;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 2px;
+        margin-top: 2px;
+    }
 
-.splash {
-    /*background-image: url("images/header-photo.jpeg");*/
-    background-image: url(https://images.pexels.com/photos/356043/pexels-photo-356043.jpeg?cs=srgb&dl=pexels-pixabay-356043.jpg&fm=jpg);
-    /*background-color: $color-two; /* Used if the image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    color: $color-one;
-    min-height: 500px;
-    display: flex;
-    text-align: center;
+    /* Header - splash  */
 
-    .navigation {
-        padding: 12px 0;
+    .splash {
+        background-image: url("../images/header-photo.jpeg");
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        color: $color-one;
+        min-height: 500px;
+        text-align: center;
+
+        .navigation {
+            padding: 12px 0;
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    margin-right: 36px;
+                    position: relative;
+
+                    a {
+                        text-decoration: none;
+                        color: $color-one;
+                        
+                        &:hover {
+                            color: $color-main;
+                        }
+                    }
+
+                    &:first-child {
+                        margin-right: 500px;
+                        font-family: $font-logo;
+                        font-size: 30px;
+                        font-style: italic;
+
+                        a {
+                            color: $color-main;
+
+                            &:hover {
+                                color:$color-one;
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+
+        .splash-inner {
+            padding: 136px 0;
+            margin: auto; /* tyle wystarczy gdy masz ustawionego flexa w rodzicu */
+            max-width: 80%;
+        
+            .page-title {
+                margin: 0;
+                font-size: 40px;
+                font-weight: 100;
+                line-height: 1.2;
+                font-style: italic;
+                text-transform: capitalize;
+            }
+
+            .page-subtitle {
+                margin: 10px 0;
+                font-weight: 300;
+                font-size: 72px;
+                font-family: $font-header;
+                text-transform: uppercase;
+            }
+
+            .btn {
+                display: inline-block;
+                min-width: 220px;
+                margin: 24px auto 0 auto;
+                padding: 16px;
+                border-radius: 5px;
+                font-family: $font-text;
+                font-size: 18px;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                cursor: pointer;
+                border-width: 2px;
+                border-style: solid;
+                background: $color-main;
+                color: $color-one;
+                border-color: $color-main;
+            }
+        }
+    }
+
+    /* Services */
+
+    .services {
+        text-align: center;
+        display: flex;
+
+        i {
+            color: $color-main;
+            font-size: 38px;
+            background: $color-one;
+            border-style: solid;
+            border-color: $color-main;
+            width: 72px;
+            height: 72px;
+            line-height: 65px;
+            border-radius: 50%; /* zaokraglanie brzegow */
+        }
+
+        h4 {
+            margin-top: 15px;
+        }
+    }
+
+    /* Portfolio */
+
+    .portfolio {
+        background: $color-four;
+        text-align: center;
+        display: flex;
+        position: relative;
+
+        .portfolio-box {
+            background: $color-one;
+            position: absolute;
+            margin: 0 auto;
+            width: 342px;
+            min-height: 342px;
+            margin-bottom: 60px;
+
+
+            .portfolio-image {
+                width: 342px;
+                height: 342px;
+        
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+            .portfolio-text {
+                padding: 20px 0;
+                margin-top: 0;
+        
+                p {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+    /* Footer */
+
+    .page-footer {
+        background: $color-one;
+        padding: 28px 0;
+        text-align: center;
 
         ul {
             padding: 0;
             margin: 0;
-            list-style-type: none;
-
+            list-style-type: none; /* wyzerowanie punktorow; moga byc inne: disc (kropki), circle, square, decimal(numeracja) */
+        
             li {
                 display: inline-block;
-                margin-right: 36px;
+                margin-right: 10px;
                 position: relative;
+                font-size: 0;
 
-                a {
-                    text-decoration: none;
-                    color: $color-one;
-                    
+                i {
+                    color: $color-main;
+                    font-size: 35px;
+                    background: $color-two;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px; /* taka sama jak height aby wycentrowac ikone w pionie */
+                    border-radius: 50%; /* zaokraglanie brzegow */
+            
                     &:hover {
-                        color: $color-main;
+                        transform: scale(1.2);
                     }
                 }
+            }
 
-                &:first-child {
-                    margin-right: 500px;
-                    font-family: $font-logo;
-                    font-size: 30px;
-                    font-style: italic;
-
-                    a {
-                        color: $color-main;
-
-                        &:hover {
-                            color:$color-one;
-                        }
-                    }
+            .first {
+                color: $color-three;
+                font-size: 16px;
+                margin-left: -350px;
                 }
-            }   
         }
-    }
-
-    .splash-inner {
-        padding: 136px 0;
-        margin: auto; /* tyle wystarczy gdy masz ustawionego flexa w rodzicu */
-        max-width: 80%;
-    
-        .page-title {
-            margin: 0;
-            font-size: 40px;
-            font-weight: 100;
-            line-height: 1.2;
-            font-style: italic;
-            text-transform: capitalize;
-        }
-
-        .page-subtitle {
-            margin: 10px 0;
-            font-weight: 300;
-            font-size: 72px;
-            font-family: $font-header;
-            text-transform: uppercase;
-        }
-
-        .btn {
-            display: inline-block;
-            min-width: 220px;
-            margin: 24px auto 0 auto;
-            padding: 16px;
-            border-radius: 5px;
-            font-family: $font-text;
-            font-size: 18px;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            cursor: pointer;
-            border-width: 2px;
-            border-style: solid;
-            background: $color-main;
-            color: $color-one;
-            border-color: $color-main;
-        }
-    }
-}
-
-/* Services */
-
-.services {
-    text-align: center;
-    display: flex;
-
-    i {
-        color: $color-main;
-        font-size: 38px;
-        background: $color-one;
-        border-style: solid;
-        border-color: $color-main;
-        width: 72px;
-        height: 72px;
-        line-height: 65px;
-        border-radius: 50%; /* zaokraglanie brzegow */
-    }
-
-    h4 {
-        margin-top: 15px;
-    }
-}
-
-/* Portfolio */
-
-.portfolio {
-    background: $color-four;
-    text-align: center;
-    display: flex;
-    position: relative;
-
-    .portfolio-box {
-        background: $color-one;
-        position: absolute;
-        width: 342px;
-        min-height: 342px;
-        margin-bottom: 60px;
-
-
-        .portfolio-image {
-            width: 342px;
-            height: 342px;
-    
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        
-        .portfolio-text {
-            /*background: $color-one;*/
-            padding: 20px 0;
-            margin-top: 0;
-            /*margin-bottom: 60px;
-            width: 342px;*/
-    
-            p {
-                font-style: italic;
-            }
-        }
-    }
-}
-
-/* Footer */
-
-.page-footer {
-    background: $color-one;
-    padding: 28px 0;
-    text-align: center;
-    display: flex;
-
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none; /* wyzerowanie punktorow; moga byc inne: disc (kropki), circle, square, decimal(numeracja) */
-    
-        li {
-            display: inline-block;
-            margin-right: 10px;
-            position: relative;
-            font-size: 0;
-
-            i {
-                color: $color-main;
-                font-size: 35px;
-                background: $color-two;
-                width: 60px;
-                height: 60px;
-                line-height: 60px; /* taka sama jak height aby wycentrowac ikone w pionie */
-                border-radius: 50%; /* zaokraglanie brzegow */
-        
-                &:hover {
-                    transform: scale(1.2);
-                }
-            }
-        }
-
-        .first {
-            color: $color-three;
-            font-size: 16px;
-            margin-left: -350px;
-            }
     }
 }
